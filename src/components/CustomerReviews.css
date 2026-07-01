@@ -1,0 +1,25 @@
+.reviews { padding: 4rem 0; background: #fff; }
+@media (min-width: 1024px) { .reviews { padding: 6rem 0; } }
+
+.reviews__heading { text-align: center; margin-bottom: 2.5rem; }
+@media (min-width: 1024px) { .reviews__heading { margin-bottom: 3.5rem; } }
+
+.reviews__rating-badge {
+  display: inline-flex; align-items: center; gap: 0.75rem;
+  background: var(--green-pale);
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+  margin-top: 0.5rem;
+}
+.reviews__stars { display: flex; align-items: center; gap: 0.25rem; }
+.reviews__score { font-weight: 700; color: var(--green-dark); }
+.reviews__count { color: var(--green-primary); font-size: 0.875rem; display: none; }
+@media (min-width: 640px) { .reviews__count { display: inline; } }
+
+.reviews__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+@media (min-width: 640px) { .reviews__grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .reviews__grid { grid-template-columns: repeat(3, 1fr); } }

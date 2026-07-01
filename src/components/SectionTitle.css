@@ -1,0 +1,39 @@
+.section-title { margin-bottom: 2.5rem; }
+@media (min-width: 1024px) { .section-title { margin-bottom: 3.5rem; } }
+.section-title.centered { text-align: center; }
+
+.section-title__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--green-light);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+.section-title__eyebrow-line {
+  width: 1.5rem;
+  height: 2px;
+  background: var(--green-light);
+  display: inline-block;
+}
+
+.section-title__heading {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--green-dark);
+  line-height: 1.2;
+}
+@media (min-width: 640px) { .section-title__heading { font-size: 2.25rem; } }
+
+.section-title__subtitle {
+  margin-top: 0.75rem;
+  color: var(--gray-500);
+  font-size: 1rem;
+  max-width: 36rem;
+  line-height: 1.6;
+}
+@media (min-width: 640px) { .section-title__subtitle { font-size: 1.125rem; } }
+.section-title.centered .section-title__subtitle { margin-left: auto; margin-right: auto; }
